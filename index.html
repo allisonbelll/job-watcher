@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Today · Job Watcher</title>
+  <meta name="description" content="Daily watch of entry-level financial advising jobs at banks and wealth firms.">
+  <meta name="theme-color" content="#1f3a5f">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">JW</span>Job Watcher</a>
+      <div class="nav-links">
+        <a href="index.html" aria-current="page">Today</a>
+        <a href="browse.html">Browse</a>
+        <a href="market.html">Market</a>
+      </div>
+      <span class="nav-status"></span>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Today</h1>
+    <p class="sub">Entry-level financial advising roles at banks and wealth firms, checked once a day.
+      Last run: <strong id="run-time">loading…</strong></p>
+
+    <section class="tiles">
+      <div class="tile"><div class="label">Days with a successful run</div><div class="value" id="t-days">–</div><div class="note" id="t-days-note"></div></div>
+      <div class="tile"><div class="label">Open postings</div><div class="value" id="t-open">–</div><div class="note" id="t-open-note"></div></div>
+      <div class="tile"><div class="label">New today</div><div class="value" id="t-new">–</div><div class="note" id="t-new-note"></div></div>
+      <div class="tile"><div class="label">Removed today</div><div class="value" id="t-removed">–</div><div class="note" id="t-removed-note"></div></div>
+    </section>
+
+    <section class="two-col">
+      <div class="card">
+        <h2>New postings <span class="muted" id="new-count"></span></h2>
+        <p class="muted small">First seen in the latest run. Postings in my role are listed first.</p>
+        <ul class="posting-list" id="new-list"><li class="empty">Loading…</li></ul>
+      </div>
+      <div class="card">
+        <h2>Removed postings <span class="muted" id="removed-count"></span></h2>
+        <p class="muted small">No longer listed by their employer in the latest run.</p>
+        <ul class="posting-list" id="removed-list"><li class="empty">Loading…</li></ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Sources</h2>
+      <p class="muted small">Status of every job board in the latest run.</p>
+      <table>
+        <thead><tr><th>Employer</th><th class="hide-sm">System</th><th>Status</th><th class="num">Postings</th><th class="hide-sm">Note</th></tr></thead>
+        <tbody id="sources"></tbody>
+      </table>
+    </section>
+  </main>
+  <footer>Data refreshes every day from each employer's public job board. <a href="https://github.com/allisonbelll/job-watcher">Source on GitHub</a></footer>
+
+  <script src="assets/common.js"></script>
+  <script src="assets/today.js"></script>
+</body>
+</html>

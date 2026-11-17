@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Market · Job Watcher</title>
+  <meta name="theme-color" content="#1f3a5f">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">JW</span>Job Watcher</a>
+      <div class="nav-links">
+        <a href="index.html">Today</a>
+        <a href="browse.html">Browse</a>
+        <a href="market.html" aria-current="page">Market</a>
+      </div>
+      <span class="nav-status"></span>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Market report</h1>
+    <p class="sub" id="intro">Every number below is computed in your browser from <code>data/history.csv</code>,
+      so the report updates as the history grows.</p>
+
+    <section class="card finding" id="s-new">
+      <h2>New postings per day</h2><p></p><div class="chart"></div>
+    </section>
+    <section class="card finding" id="s-removed">
+      <h2>Removed postings per day</h2><p></p><div class="chart"></div>
+    </section>
+    <section class="card finding" id="s-employer">
+      <h2>Open postings per employer</h2><p></p><div class="chart"></div>
+    </section>
+    <section class="card finding" id="s-days">
+      <h2>Days open</h2><p></p><div class="chart"></div>
+    </section>
+    <section class="card finding" id="s-share">
+      <h2>Share removed within seven days</h2><p></p><div class="chart"></div>
+    </section>
+    <section class="card finding" id="s-locations">
+      <h2>Top locations among open postings</h2><p></p><div class="chart"></div>
+    </section>
+  </main>
+  <footer>Postings marked first-run were already open when Job Watcher started reading their board, so their start date is unknown. Sections 1, 4 and 5 leave them out.</footer>
+
+  <script src="assets/common.js"></script>
+  <script src="assets/market.js"></script>
+</body>
+</html>

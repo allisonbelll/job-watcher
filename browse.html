@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Browse · Job Watcher</title>
+  <meta name="theme-color" content="#1f3a5f">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">JW</span>Job Watcher</a>
+      <div class="nav-links">
+        <a href="index.html">Today</a>
+        <a href="browse.html" aria-current="page">Browse</a>
+        <a href="market.html">Market</a>
+      </div>
+      <span class="nav-status"></span>
+    </div>
+  </nav>
+
+  <main>
+    <h1>Browse open postings</h1>
+    <p class="sub">Star a posting to save it to your shortlist. The shortlist stays in this browser.</p>
+
+    <section class="card">
+      <div class="controls">
+        <div class="control">Show
+          <div class="switch" role="group" aria-label="Postings to show">
+            <button type="button" data-scope="role" aria-pressed="true">My role</button>
+            <button type="button" data-scope="all" aria-pressed="false">All postings</button>
+            <button type="button" data-scope="star" aria-pressed="false">★ Shortlist</button>
+          </div>
+        </div>
+        <label class="control">Search titles
+          <input type="search" id="q" placeholder="e.g. associate, planner">
+        </label>
+        <label class="control">Employer
+          <select id="employer"><option value="">All employers</option></select>
+        </label>
+        <label class="control">Location
+          <select id="location"><option value="">All locations</option></select>
+        </label>
+        <label class="control">Days open
+          <select id="days">
+            <option value="">Any</option>
+            <option value="0-1">1 day or less</option>
+            <option value="0-7">7 days or less</option>
+            <option value="8-30">8 to 30 days</option>
+            <option value="31-99999">More than 30 days</option>
+          </select>
+        </label>
+        <label class="control">Sort
+          <select id="sort">
+            <option value="new">First seen: newest</option>
+            <option value="old">First seen: oldest</option>
+          </select>
+        </label>
+        <button class="btn" type="button" id="reset">Reset</button>
+      </div>
+    </section>
+
+    <div class="result-count" id="count">Loading…</div>
+    <section class="card" style="padding:0 6px">
+      <table>
+        <thead><tr>
+          <th style="width:32px"></th><th>Title</th><th>Employer</th><th class="hide-sm">Location</th>
+          <th class="num">First seen</th><th class="num hide-sm">Days open</th><th></th>
+        </tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </section>
+    <div style="text-align:center"><button class="btn" id="more" hidden>Show more</button></div>
+  </main>
+  <footer>Days open counts from the day Job Watcher first saw the posting. Postings that were already open on a board's first day show “≥”.</footer>
+
+  <script src="assets/common.js"></script>
+  <script src="assets/browse.js"></script>
+</body>
+</html>
