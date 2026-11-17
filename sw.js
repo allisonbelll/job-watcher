@@ -1,7 +1,7 @@
 /* Service worker: the app shell is cached on install; every request goes to
    the network first and falls back to the cache, so online visitors always
    get fresh data and offline visitors get the last data they loaded. */
-const CACHE = "job-watcher-v2";
+const CACHE = "job-watcher-v3";
 const SHELL = [
   "./", "index.html", "browse.html", "market.html",
   "assets/style.css", "assets/common.js", "assets/today.js", "assets/browse.js", "assets/market.js",
@@ -22,7 +22,22 @@ self.addEventListener("activate", event => {
 
 self.addEventListener("fetch", event => {
   const req = event.request;
-  if (req.method !== "GET" || new URL(req.url).origin !== location.origin) return;
+  if (req.method !== "GET") return;
+  const url = new URL(req.url);
+  // Web fonts: cache first, so the look survives offline.
+  if (url.hostname === "fonts.googleapis.com" || url.hostname === "fonts.gstatic.com") {
+    event.respondWith(caches.open(CACHE).then(async cache => {
+      const hit = await cache.match(req);
+      if (hit) return hit;
+      try {
+        const res = await fetch(req);
+        if (res.ok || res.type === "opaque") cache.put(req, res.clone());
+        return res;
+      } catch (err) { return Response.error(); }
+    }));
+    return;
+  }
+  if (url.origin !== location.origin) return;
   event.respondWith((async () => {
     const cache = await caches.open(CACHE);
     try {

@@ -4,28 +4,38 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Browse · Job Watcher</title>
-  <meta name="theme-color" content="#e4daf7">
+  <meta name="description" content="Daily watch of entry-level financial advising jobs at banks and wealth firms.">
+  <meta name="theme-color" content="#e3eadb">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" href="icons/icon-192.png">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <nav class="nav">
-    <div class="nav-inner">
-      <a class="brand" href="index.html"><span class="brand-mark">JW</span>Job Watcher</a>
-      <div class="nav-links">
-        <a href="index.html">Today</a>
-        <a href="browse.html" aria-current="page">Browse</a>
-        <a href="market.html">Market</a>
+  <div class="paper">
+  <header class="masthead">
+    <nav class="nav">
+      <div class="nav-inner">
+        <div class="nav-links left"><a href="index.html">Today</a><a href="browse.html" aria-current="page">Browse</a></div>
+        <a class="brand" href="index.html"><span class="brand-name">Job Watcher</span><span class="brand-sub">Financial Advising</span></a>
+        <div class="nav-links right"><a href="market.html">Market</a><a href="https://github.com/allisonbelll/job-watcher/issues">Daily Notes</a></div>
+        <span class="nav-status"></span>
       </div>
-      <span class="nav-status"></span>
+    </nav>
+    <div class="tagline">Entry-level advising roles &nbsp;·&nbsp; checked every morning &nbsp;·&nbsp; 26 employers</div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-panel">
+      <h1><span>Browse</span><span class="indent">Open Roles</span></h1>
+      <p class="sub">Search, filter and sort every open posting. Tap the star to save a role to your shortlist; it stays in this browser.</p>
     </div>
-  </nav>
+  </section>
 
   <main>
-    <h1>Browse open postings</h1>
-    <p class="sub">Star a posting to save it to your shortlist. The shortlist stays in this browser.</p>
 
     <section class="card">
       <div class="controls">
@@ -76,7 +86,17 @@
     </section>
     <div style="text-align:center"><button class="btn" id="more" hidden>Show more</button></div>
   </main>
-  <footer>Days open counts from the day Job Watcher first saw the posting. Postings that were already open on a board's first day show “≥”.</footer>
+
+  <footer class="foot">
+    <div class="toile-band" aria-hidden="true"></div>
+    <div class="foot-row">
+      <span>Updated every morning</span>
+      <a class="monogram" href="index.html" aria-label="Job Watcher home">JW</a>
+      <span>Public job board data</span>
+    </div>
+    <div class="foot-note">Days open counts from the day Job Watcher first saw the posting. Postings that were already open on a board's first day show “≥”.</div>
+  </footer>
+  </div>
 
   <script src="assets/common.js"></script>
   <script src="assets/browse.js"></script>

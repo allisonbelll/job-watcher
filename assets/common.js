@@ -128,7 +128,7 @@ const JW = (() => {
     let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(opts.label || "chart")}">`;
     for (let k = 0; k <= 4; k++) {
       const v = (max / 4) * k, y = T + ih - (v / max) * ih;
-      svg += `<line x1="${L}" x2="${W - R}" y1="${y}" y2="${y}" stroke="#efe4ee"/>`;
+      svg += `<line x1="${L}" x2="${W - R}" y1="${y}" y2="${y}" stroke="#eceee6"/>`;
       svg += `<text x="${L - 6}" y="${y + 4}" text-anchor="end">${fmt(Math.round(v))}</text>`;
     }
     const every = Math.ceil(n / 14);
@@ -156,7 +156,7 @@ const JW = (() => {
       const y = 4 + i * row, w = ((W - L - R) * v) / max;
       const short = String(lab).length > 34 ? String(lab).slice(0, 33) + "…" : lab;
       svg += `<text x="${L - 8}" y="${y + 16}" text-anchor="end">${esc(short)}</text>`;
-      svg += `<rect x="${L}" y="${y + 3}" width="${Math.max(1, w)}" height="${row - 8}" rx="3" fill="${opts.color || "#b39ddb"}"><title>${esc(lab)}: ${fmt(v)}</title></rect>`;
+      svg += `<rect x="${L}" y="${y + 3}" width="${Math.max(1, w)}" height="${row - 8}" rx="3" fill="${opts.color || "#7f9cb8"}"><title>${esc(lab)}: ${fmt(v)}</title></rect>`;
       svg += `<text x="${L + w + 6}" y="${y + 16}">${opts.fmtValue ? opts.fmtValue(v) : fmt(v)}</text>`;
     });
     el.innerHTML = svg + "</svg>";
