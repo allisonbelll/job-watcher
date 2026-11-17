@@ -1,0 +1,25 @@
+{
+  "_note": "Employers the pipeline watches. name = file name of the raw file; ats = applicant tracking system adapter in watcher/ats.py; search = term used only if the board lists more than 5,000 postings.",
+  "sources": [
+    {"name": "jpmorgan-chase", "employer": "JPMorgan Chase", "ats": "oracle", "base": "https://jpmc.fa.oraclecloud.com", "site": "CX_1001", "search": "advisor"},
+    {"name": "morgan-stanley", "employer": "Morgan Stanley", "ats": "eightfold", "host": "morganstanley.eightfold.ai", "domain": "morganstanley.com", "search": "advisor"},
+    {"name": "fidelity-investments", "employer": "Fidelity Investments", "ats": "workday", "host": "fmr.wd1.myworkdayjobs.com", "tenant": "fmr", "site": "FidelityCareers", "search": "advisor"},
+    {"name": "wells-fargo", "employer": "Wells Fargo", "ats": "workday", "host": "wd1.myworkdayjobs.com", "tenant": "wf", "site": "WellsFargoJobs", "search": "advisor"},
+    {"name": "charles-schwab", "employer": "Charles Schwab", "ats": "workday", "host": "schwab.wd1.myworkdayjobs.com", "tenant": "schwab", "site": "Schwab", "search": "advisor"},
+    {"name": "edward-jones", "employer": "Edward Jones", "ats": "workday", "host": "edwardjones.wd5.myworkdayjobs.com", "tenant": "edwardjones", "site": "EdwardJonesCareers", "search": "advisor"},
+    {"name": "truist", "employer": "Truist", "ats": "workday", "host": "truist.wd1.myworkdayjobs.com", "tenant": "truist", "site": "Careers", "search": "advisor"},
+    {"name": "u-s-bank", "employer": "U.S. Bank", "ats": "workday", "host": "usbank.wd1.myworkdayjobs.com", "tenant": "usbank", "site": "US_Bank_Careers", "search": "advisor"},
+    {"name": "pnc", "employer": "PNC", "ats": "workday", "host": "pnc.wd5.myworkdayjobs.com", "tenant": "pnc", "site": "External", "search": "advisor"},
+    {"name": "state-street", "employer": "State Street", "ats": "workday", "host": "statestreet.wd1.myworkdayjobs.com", "tenant": "statestreet", "site": "Global", "search": "advisor"},
+    {"name": "t-rowe-price", "employer": "T. Rowe Price", "ats": "workday", "host": "troweprice.wd5.myworkdayjobs.com", "tenant": "troweprice", "site": "TRowePrice", "search": "advisor"},
+    {"name": "capital-one", "employer": "Capital One", "ats": "workday", "host": "capitalone.wd12.myworkdayjobs.com", "tenant": "capitalone", "site": "Capital_One", "search": "advisor"},
+    {"name": "blackrock", "employer": "BlackRock", "ats": "workday", "host": "blackrock.wd1.myworkdayjobs.com", "tenant": "blackrock", "site": "BlackRock_Professional", "search": "advisor"},
+    {"name": "tiaa", "employer": "TIAA", "ats": "workday", "host": "tiaa.wd1.myworkdayjobs.com", "tenant": "tiaa", "site": "Search", "search": "advisor"},
+    {"name": "citi", "employer": "Citi", "ats": "workday", "host": "citi.wd5.myworkdayjobs.com", "tenant": "citi", "site": "2", "search": "advisor"},
+    {"name": "robinhood", "employer": "Robinhood", "ats": "greenhouse", "board": "robinhood"},
+    {"name": "betterment", "employer": "Betterment", "ats": "greenhouse", "board": "betterment"},
+    {"name": "sofi", "employer": "SoFi", "ats": "greenhouse", "board": "sofi"},
+    {"name": "ramp", "employer": "Ramp", "ats": "ashby", "board": "ramp"},
+    {"name": "visa", "employer": "Visa", "ats": "smartrecruiters", "board": "Visa", "search": "advisor"}
+  ]
+}
