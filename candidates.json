@@ -1,41 +1,435 @@
 {
-  "_note": "Employers to test with `python -m watcher.probe`. Workday entries list the tenant and the site names to try; the probe tries each on wd1, wd3, wd5 and wd12. Boards that answer with JSON go into sources.json.",
-  "candidates": [
-    {"employer": "JPMorgan Chase", "ats": "oracle", "base": "https://jpmc.fa.oraclecloud.com", "site": "CX_1001"},
-    {"employer": "Morgan Stanley", "ats": "eightfold", "host": "morganstanley.eightfold.ai", "domain": "morganstanley.com"},
-    {"employer": "Fidelity Investments", "ats": "workday", "tenant": "fmr", "sites": ["FidelityCareers"]},
-    {"employer": "Wells Fargo", "ats": "workday", "tenant": "wf", "sites": ["WellsFargoJobs", "External"]},
-    {"employer": "Wells Fargo", "ats": "workday", "tenant": "wellsfargo", "sites": ["WellsFargoJobs", "External"]},
-    {"employer": "Charles Schwab", "ats": "workday", "tenant": "schwab", "sites": ["Schwab", "Schwab_Careers", "External"]},
-    {"employer": "Edward Jones", "ats": "workday", "tenant": "edwardjones", "sites": ["EdwardJonesCareers", "External", "Careers"]},
-    {"employer": "Raymond James", "ats": "workday", "tenant": "raymondjames", "sites": ["RaymondJamesCareers", "External", "Careers"]},
-    {"employer": "Ameriprise Financial", "ats": "workday", "tenant": "ameriprise", "sites": ["Ameriprise", "External", "Careers"]},
-    {"employer": "Northwestern Mutual", "ats": "workday", "tenant": "northwesternmutual", "sites": ["CORPORATE-CAREERS", "External", "FinancialRepresentative"]},
-    {"employer": "Truist", "ats": "workday", "tenant": "truist", "sites": ["Careers", "External"]},
-    {"employer": "U.S. Bank", "ats": "workday", "tenant": "usbank", "sites": ["US_Bank_Careers", "External"]},
-    {"employer": "PNC", "ats": "workday", "tenant": "pnc", "sites": ["External"]},
-    {"employer": "State Street", "ats": "workday", "tenant": "statestreet", "sites": ["Global"]},
-    {"employer": "BNY", "ats": "workday", "tenant": "bnymellon", "sites": ["BNY_Careers", "BNYMellonCareers", "External"]},
-    {"employer": "T. Rowe Price", "ats": "workday", "tenant": "troweprice", "sites": ["TRowePrice", "External"]},
-    {"employer": "Capital One", "ats": "workday", "tenant": "capitalone", "sites": ["Capital_One"]},
-    {"employer": "Vanguard", "ats": "workday", "tenant": "vanguard", "sites": ["vanguard_external", "External"]},
-    {"employer": "Citi", "ats": "workday", "tenant": "citi", "sites": ["2", "Citi", "External"]},
-    {"employer": "BlackRock", "ats": "workday", "tenant": "blackrock", "sites": ["BlackRock_Professional", "BlackRock_Campus"]},
-    {"employer": "TIAA", "ats": "workday", "tenant": "tiaa", "sites": ["Search", "External"]},
-    {"employer": "Principal Financial Group", "ats": "workday", "tenant": "principal", "sites": ["Principal", "External", "Careers"]},
-    {"employer": "LPL Financial", "ats": "workday", "tenant": "lplfinancial", "sites": ["External", "LPL", "Careers"]},
-    {"employer": "Regions Bank", "ats": "workday", "tenant": "regions", "sites": ["Regions_Careers", "External"]},
-    {"employer": "Fifth Third Bank", "ats": "workday", "tenant": "fifththird", "sites": ["53careers", "External"]},
-    {"employer": "Nationwide", "ats": "workday", "tenant": "nationwide", "sites": ["Nationwide_Career", "External"]},
-    {"employer": "Thrivent", "ats": "workday", "tenant": "thrivent", "sites": ["thrivent", "External"]},
-    {"employer": "Robinhood", "ats": "greenhouse", "board": "robinhood"},
-    {"employer": "Betterment", "ats": "greenhouse", "board": "betterment"},
-    {"employer": "SoFi", "ats": "greenhouse", "board": "sofi"},
-    {"employer": "Wealthfront", "ats": "greenhouse", "board": "wealthfront"},
-    {"employer": "Carta", "ats": "greenhouse", "board": "carta"},
-    {"employer": "Addepar", "ats": "greenhouse", "board": "addepar1"},
-    {"employer": "Ramp", "ats": "ashby", "board": "ramp"},
-    {"employer": "Plaid", "ats": "lever", "board": "plaid"},
-    {"employer": "Visa", "ats": "smartrecruiters", "board": "Visa"}
-  ]
+ "_note": "Employers to test with `python -m watcher.probe`. The first working board per employer is kept. Workday boards answer GitHub's servers with HTTP 429, so only one Workday entry is kept as a check.",
+ "candidates": [
+  {
+   "employer": "JPMorgan Chase",
+   "ats": "oracle",
+   "base": "https://jpmc.fa.oraclecloud.com",
+   "site": "CX_1001"
+  },
+  {
+   "employer": "Morgan Stanley",
+   "ats": "eightfold",
+   "host": "morganstanley.eightfold.ai",
+   "domain": "morganstanley.com"
+  },
+  {
+   "employer": "Fidelity Investments",
+   "ats": "workday",
+   "tenant": "fmr",
+   "sites": [
+    "FidelityCareers"
+   ]
+  },
+  {
+   "employer": "Robinhood",
+   "ats": "greenhouse",
+   "board": "robinhood"
+  },
+  {
+   "employer": "Betterment",
+   "ats": "greenhouse",
+   "board": "betterment"
+  },
+  {
+   "employer": "SoFi",
+   "ats": "greenhouse",
+   "board": "sofi"
+  },
+  {
+   "employer": "Carta",
+   "ats": "greenhouse",
+   "board": "carta"
+  },
+  {
+   "employer": "Addepar",
+   "ats": "greenhouse",
+   "board": "addepar1"
+  },
+  {
+   "employer": "Chime",
+   "ats": "greenhouse",
+   "board": "chime"
+  },
+  {
+   "employer": "Brex",
+   "ats": "greenhouse",
+   "board": "brex"
+  },
+  {
+   "employer": "Affirm",
+   "ats": "greenhouse",
+   "board": "affirm"
+  },
+  {
+   "employer": "Coinbase",
+   "ats": "greenhouse",
+   "board": "coinbase"
+  },
+  {
+   "employer": "NerdWallet",
+   "ats": "greenhouse",
+   "board": "nerdwallet"
+  },
+  {
+   "employer": "Credit Karma",
+   "ats": "greenhouse",
+   "board": "creditkarma"
+  },
+  {
+   "employer": "Marqeta",
+   "ats": "greenhouse",
+   "board": "marqeta"
+  },
+  {
+   "employer": "Acorns",
+   "ats": "greenhouse",
+   "board": "acorns"
+  },
+  {
+   "employer": "Stash",
+   "ats": "greenhouse",
+   "board": "stash"
+  },
+  {
+   "employer": "Public.com",
+   "ats": "greenhouse",
+   "board": "publiccom"
+  },
+  {
+   "employer": "Mercury",
+   "ats": "greenhouse",
+   "board": "mercury"
+  },
+  {
+   "employer": "Stripe",
+   "ats": "greenhouse",
+   "board": "stripe"
+  },
+  {
+   "employer": "Plaid",
+   "ats": "greenhouse",
+   "board": "plaid"
+  },
+  {
+   "employer": "Two Sigma",
+   "ats": "greenhouse",
+   "board": "twosigma"
+  },
+  {
+   "employer": "Citadel",
+   "ats": "greenhouse",
+   "board": "citadel"
+  },
+  {
+   "employer": "Point72",
+   "ats": "greenhouse",
+   "board": "point72"
+  },
+  {
+   "employer": "AQR Capital",
+   "ats": "greenhouse",
+   "board": "aqr"
+  },
+  {
+   "employer": "Bridgewater",
+   "ats": "greenhouse",
+   "board": "bridgewater89"
+  },
+  {
+   "employer": "DRW",
+   "ats": "greenhouse",
+   "board": "drweng"
+  },
+  {
+   "employer": "IMC Trading",
+   "ats": "greenhouse",
+   "board": "imc"
+  },
+  {
+   "employer": "Jane Street",
+   "ats": "greenhouse",
+   "board": "janestreet"
+  },
+  {
+   "employer": "Hudson River Trading",
+   "ats": "greenhouse",
+   "board": "hudsonrivertrading"
+  },
+  {
+   "employer": "Jump Trading",
+   "ats": "greenhouse",
+   "board": "jumptrading"
+  },
+  {
+   "employer": "Facet",
+   "ats": "greenhouse",
+   "board": "facet"
+  },
+  {
+   "employer": "Apex Fintech",
+   "ats": "greenhouse",
+   "board": "apexfintechsolutions"
+  },
+  {
+   "employer": "Dave",
+   "ats": "greenhouse",
+   "board": "dave"
+  },
+  {
+   "employer": "MoneyLion",
+   "ats": "greenhouse",
+   "board": "moneylion"
+  },
+  {
+   "employer": "Gemini",
+   "ats": "greenhouse",
+   "board": "gemini"
+  },
+  {
+   "employer": "Upstart",
+   "ats": "greenhouse",
+   "board": "upstart"
+  },
+  {
+   "employer": "Fundrise",
+   "ats": "greenhouse",
+   "board": "fundrise"
+  },
+  {
+   "employer": "Yieldstreet",
+   "ats": "greenhouse",
+   "board": "yieldstreet"
+  },
+  {
+   "employer": "Altruist",
+   "ats": "greenhouse",
+   "board": "altruist"
+  },
+  {
+   "employer": "Farther",
+   "ats": "greenhouse",
+   "board": "farther"
+  },
+  {
+   "employer": "Wealthsimple",
+   "ats": "greenhouse",
+   "board": "wealthsimple"
+  },
+  {
+   "employer": "Wealthfront",
+   "ats": "greenhouse",
+   "board": "wealthfront"
+  },
+  {
+   "employer": "LendingClub",
+   "ats": "greenhouse",
+   "board": "lendingclub"
+  },
+  {
+   "employer": "Blend",
+   "ats": "greenhouse",
+   "board": "blend"
+  },
+  {
+   "employer": "Galaxy Digital",
+   "ats": "greenhouse",
+   "board": "galaxydigitalservices"
+  },
+  {
+   "employer": "Pimco",
+   "ats": "greenhouse",
+   "board": "pimco"
+  },
+  {
+   "employer": "Envestnet",
+   "ats": "greenhouse",
+   "board": "envestnet"
+  },
+  {
+   "employer": "Orion",
+   "ats": "greenhouse",
+   "board": "orionadvisor"
+  },
+  {
+   "employer": "AssetMark",
+   "ats": "greenhouse",
+   "board": "assetmark"
+  },
+  {
+   "employer": "Flourish",
+   "ats": "greenhouse",
+   "board": "flourish"
+  },
+  {
+   "employer": "Arta Finance",
+   "ats": "greenhouse",
+   "board": "artafinance"
+  },
+  {
+   "employer": "Range",
+   "ats": "greenhouse",
+   "board": "range"
+  },
+  {
+   "employer": "Ramp",
+   "ats": "ashby",
+   "board": "ramp"
+  },
+  {
+   "employer": "Altruist",
+   "ats": "ashby",
+   "board": "altruist"
+  },
+  {
+   "employer": "Range",
+   "ats": "ashby",
+   "board": "range"
+  },
+  {
+   "employer": "Farther",
+   "ats": "ashby",
+   "board": "farther"
+  },
+  {
+   "employer": "Savvy Wealth",
+   "ats": "ashby",
+   "board": "savvy-wealth"
+  },
+  {
+   "employer": "Arta Finance",
+   "ats": "ashby",
+   "board": "arta-finance"
+  },
+  {
+   "employer": "Wealthsimple",
+   "ats": "ashby",
+   "board": "wealthsimple"
+  },
+  {
+   "employer": "Mercury",
+   "ats": "ashby",
+   "board": "mercury"
+  },
+  {
+   "employer": "Plaid",
+   "ats": "ashby",
+   "board": "plaid"
+  },
+  {
+   "employer": "Origin",
+   "ats": "ashby",
+   "board": "origin"
+  },
+  {
+   "employer": "Domain Money",
+   "ats": "ashby",
+   "board": "domain-money"
+  },
+  {
+   "employer": "Facet",
+   "ats": "ashby",
+   "board": "facet"
+  },
+  {
+   "employer": "Public.com",
+   "ats": "ashby",
+   "board": "public"
+  },
+  {
+   "employer": "Kalshi",
+   "ats": "ashby",
+   "board": "kalshi"
+  },
+  {
+   "employer": "Titan",
+   "ats": "ashby",
+   "board": "titan"
+  },
+  {
+   "employer": "Compound Planning",
+   "ats": "ashby",
+   "board": "compound"
+  },
+  {
+   "employer": "Brex",
+   "ats": "ashby",
+   "board": "brex"
+  },
+  {
+   "employer": "Wealthfront",
+   "ats": "ashby",
+   "board": "wealthfront"
+  },
+  {
+   "employer": "Wealthfront",
+   "ats": "lever",
+   "board": "wealthfront"
+  },
+  {
+   "employer": "Kraken",
+   "ats": "lever",
+   "board": "kraken"
+  },
+  {
+   "employer": "Voleon",
+   "ats": "lever",
+   "board": "voleon"
+  },
+  {
+   "employer": "Gemini",
+   "ats": "lever",
+   "board": "gemini"
+  },
+  {
+   "employer": "Plaid",
+   "ats": "lever",
+   "board": "plaid"
+  },
+  {
+   "employer": "Facet",
+   "ats": "lever",
+   "board": "facetwealth"
+  },
+  {
+   "employer": "Savvy Wealth",
+   "ats": "lever",
+   "board": "savvywealth"
+  },
+  {
+   "employer": "Farther",
+   "ats": "lever",
+   "board": "farther"
+  },
+  {
+   "employer": "Arcesium",
+   "ats": "lever",
+   "board": "arcesium"
+  },
+  {
+   "employer": "Visa",
+   "ats": "smartrecruiters",
+   "board": "Visa"
+  },
+  {
+   "employer": "Western Union",
+   "ats": "smartrecruiters",
+   "board": "WesternUnion"
+  },
+  {
+   "employer": "Equitable",
+   "ats": "smartrecruiters",
+   "board": "Equitable"
+  },
+  {
+   "employer": "AllianceBernstein",
+   "ats": "smartrecruiters",
+   "board": "AllianceBernstein"
+  },
+  {
+   "employer": "Raymond James",
+   "ats": "smartrecruiters",
+   "board": "RaymondJames"
+  }
+ ]
 }

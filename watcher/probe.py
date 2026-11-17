@@ -20,7 +20,7 @@ import requests
 from . import ats
 
 ROOT = Path(__file__).resolve().parent.parent
-WD_PODS = ["wd1", "wd5", "wd12", "wd3"]
+WD_PODS = ["wd1"]
 
 
 def slug(text: str) -> str:
@@ -77,7 +77,7 @@ def main() -> None:
         last_err = ""
         attempts = []
         for src in expand(c):
-            time.sleep(1.5 if src["ats"] == "workday" else 0.3)
+            time.sleep(1.0 if src["ats"] == "workday" else 0.25)
             board = src.get("host") or src.get("base") or src.get("board")
             if src["ats"] == "workday":
                 board = f"{src['host']}/{src['site']}"
@@ -88,7 +88,10 @@ def main() -> None:
                 code = re.search(r"HTTP (\d+)", str(exc))
                 attempts.append(f"{board}:{code.group(1) if code else 'err'}")
                 if code and code.group(1) == "429":
-                    time.sleep(20)
+                    break          # blocked: do not keep knocking
+                continue
+            if total == 0:
+                attempts.append(f"{board}:empty")
                 continue
             src["name"] = slug(c["employer"])
             if total > ats.MAX_POSTINGS:
@@ -96,11 +99,12 @@ def main() -> None:
             working.append(src)
             done.add(c["employer"])
             lines.append(f"| {c['employer']} | {src['ats']} | `{board}` | OK | {total} |")
+            print(lines[-1], flush=True)
             break
-        else:
+        if c["employer"] not in done:
             lines.append(f"| {c['employer']} | {c['ats']} | — | FAIL | {' '.join(attempts)[:400]} |")
+            print(lines[-1], flush=True)
     table = "\n".join(lines)
-    print(table)
     print(f"\n{len(working)} boards work.")
     (ROOT / "probe_results.json").write_text(json.dumps({"sources": working}, indent=2) + "\n")
     summary = os.environ.get("GITHUB_STEP_SUMMARY")
