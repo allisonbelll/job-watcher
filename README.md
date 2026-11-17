@@ -91,10 +91,13 @@ pattern. Matching ignores case (`watcher/rules.py`).
 - `client (service) associate`
 - `financial planning associate`, `analyst`, or `specialist`
 - `paraplanner`
-- `advisor` or `adviser` followed by `associate`, `trainee`, `development`, or `apprentice`
+- `advisor` or `adviser` followed by `associate`, `trainee`, `development`, `apprentice`, or `program`
 
 **Exclude** (entry level only): `senior`, `sr.`, `lead`, `principal`, `director`, `vice president`, `VP`/`AVP`/`SVP`,
-`managing`, `head of`, `manager`, `executive`, `chief`, `partner`, `intern`/`internship`.
+`managing`, `head of`, `manager`, `executive`, `chief`, `partner`, `intern`/`internship`. Support jobs inside a wealth
+division are also excluded: `recruiting`/`recruiter`, `media`, `marketing`, `technology`, `software`,
+`engineer`/`engineering`, `developer`, `data`, `operation(s)`, `quality`, `compliance`, `audit`, `risk`, `legal`,
+`controller`, `business management`.
 
 ## How the history is built
 

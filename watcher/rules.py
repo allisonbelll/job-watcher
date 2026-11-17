@@ -16,7 +16,7 @@ INCLUDE = [
     r"\bclient (service )?associate\b",
     r"\bfinancial planning (associate|analyst|specialist)\b",
     r"\bparaplanner\b",
-    r"\b(advisor|adviser) (associate|trainee|development|apprentice)\b",
+    r"\b(advisor|adviser) (associate|trainee|development|apprentice|program)\b",
 ]
 
 EXCLUDE = [
@@ -24,6 +24,11 @@ EXCLUDE = [
     r"\bdirector\b", r"\bvice president\b", r"\b(a|s)?vp\b", r"\bmanaging\b",
     r"\bhead of\b", r"\bmanager\b", r"\bexecutive\b", r"\bchief\b",
     r"\bpartner\b", r"\bintern(ship)?\b",
+    # support functions inside a wealth division are not advising roles
+    r"\brecruit(ing|er)\b", r"\bmedia\b", r"\bmarketing\b", r"\btechnology\b",
+    r"\bsoftware\b", r"\bengineer(ing)?\b", r"\bdeveloper\b", r"\bdata\b",
+    r"\boperations?\b", r"\bquality\b", r"\bcompliance\b", r"\baudit\b",
+    r"\brisk\b", r"\blegal\b", r"\bcontroller\b", r"\bbusiness management\b",
 ]
 
 _INCLUDE = re.compile("|".join(f"(?:{p})" for p in INCLUDE), re.I)
