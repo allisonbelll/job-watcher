@@ -12,6 +12,7 @@ from __future__ import annotations
 import json
 import os
 import re
+import time
 from pathlib import Path
 
 import requests
@@ -19,7 +20,7 @@ import requests
 from . import ats
 
 ROOT = Path(__file__).resolve().parent.parent
-WD_PODS = ["wd1", "wd3", "wd5", "wd12", "wd2", "wd10"]
+WD_PODS = ["wd1", "wd5", "wd12", "wd3"]
 
 
 def slug(text: str) -> str:
@@ -74,7 +75,9 @@ def main() -> None:
         if c["employer"] in done:
             continue
         last_err = ""
+        attempts = []
         for src in expand(c):
+            time.sleep(1.5 if src["ats"] == "workday" else 0.3)
             board = src.get("host") or src.get("base") or src.get("board")
             if src["ats"] == "workday":
                 board = f"{src['host']}/{src['site']}"
@@ -82,6 +85,10 @@ def main() -> None:
                 total = first_page(src, s)
             except Exception as exc:
                 last_err = str(exc)[:80]
+                code = re.search(r"HTTP (\d+)", str(exc))
+                attempts.append(f"{board}:{code.group(1) if code else 'err'}")
+                if code and code.group(1) == "429":
+                    time.sleep(20)
                 continue
             src["name"] = slug(c["employer"])
             if total > ats.MAX_POSTINGS:
@@ -91,7 +98,7 @@ def main() -> None:
             lines.append(f"| {c['employer']} | {src['ats']} | `{board}` | OK | {total} |")
             break
         else:
-            lines.append(f"| {c['employer']} | {c['ats']} | — | FAIL | {last_err} |")
+            lines.append(f"| {c['employer']} | {c['ats']} | — | FAIL | {' '.join(attempts)[:400]} |")
     table = "\n".join(lines)
     print(table)
     print(f"\n{len(working)} boards work.")
