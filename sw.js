@@ -1,7 +1,7 @@
 /* Service worker: the app shell is cached on install; every request goes to
    the network first and falls back to the cache, so online visitors always
    get fresh data and offline visitors get the last data they loaded. */
-const CACHE = "job-watcher-v1";
+const CACHE = "job-watcher-v2";
 const SHELL = [
   "./", "index.html", "browse.html", "market.html",
   "assets/style.css", "assets/common.js", "assets/today.js", "assets/browse.js", "assets/market.js",

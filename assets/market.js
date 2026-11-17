@@ -9,7 +9,7 @@
    6 Top locations    = open rows counted by location                                     */
 (async () => {
   const { $, esc, fmt, pct, fmtDay, daysBetween, dayRange, median, countBy } = JW;
-  const ALL = "#9fb3c8", ROLE = "#2f6690";
+  const ALL = "#bcd7f2", ROLE = "#b39ddb";
 
   function section(id, heading, text) {
     const s = $("#" + id);
@@ -61,7 +61,7 @@
       const el = section("s-removed", heading,
         `Postings whose employer stopped listing them, counted on the day they disappeared. A posting that is
          removed and later listed again counts only on its latest removal date.`);
-      JW.columnChart(el, days, [{ name: "Removed", color: "#b07a3b", values: vals }],
+      JW.columnChart(el, days, [{ name: "Removed", color: "#f6c1a7", values: vals }],
         { fmtLabel: fmtDay, label: "Removed postings per day" });
     }
 
@@ -76,7 +76,7 @@
          the number in my role is ${fmt(open.filter(r => r.in_role).length)}, led by
          ${esc((countBy(open.filter(r => r.in_role), "employer")[0] || ["no employer"])[0])}.`);
       JW.barList(el, by, {
-        label: "Open postings per employer",
+        label: "Open postings per employer", color: "#f4b8c8",
         fmtValue: v => fmt(v),
       });
       el.insertAdjacentHTML("beforeend", `<p class="muted small">In my role: ${
@@ -127,7 +127,7 @@
       const el = section("s-locations", `${topLoc} leads open postings with ${fmt(topN)}`,
         `The 15 most common locations among the ${fmt(open.length)} open postings, as each job board writes them${blank ? ` (${fmt(blank)} postings list no location)` : ""}. Workday boards list a posting with several
          sites as “N Locations”.`);
-      JW.barList(el, locs, { label: "Top locations", color: "#3f7d6e", labelWidth: 260 });
+      JW.barList(el, locs, { label: "Top locations", color: "#a8d8c8", labelWidth: 260 });
     }
   } catch (err) {
     JW.showError(err);
