@@ -1,13 +1,13 @@
 {
   "date": "2026-11-18",
-  "run_time": "2026-11-18T03:08:44Z",
+  "run_time": "2026-11-18T20:41:14Z",
   "sources": [
     {
       "name": "jpmorgan-chase",
       "employer": "JPMorgan Chase",
       "ats": "oracle",
       "ok": true,
-      "count": 1332,
+      "count": 1345,
       "search_term": "wealth",
       "error": ""
     },
@@ -34,7 +34,7 @@
       "employer": "SoFi",
       "ats": "greenhouse",
       "ok": true,
-      "count": 51,
+      "count": 52,
       "search_term": "",
       "error": ""
     },
@@ -52,7 +52,7 @@
       "employer": "Addepar",
       "ats": "greenhouse",
       "ok": true,
-      "count": 120,
+      "count": 118,
       "search_term": "",
       "error": ""
     },
@@ -61,7 +61,7 @@
       "employer": "Carta",
       "ats": "greenhouse",
       "ok": true,
-      "count": 77,
+      "count": 78,
       "search_term": "",
       "error": ""
     },
@@ -79,7 +79,7 @@
       "employer": "AQR Capital Management",
       "ats": "greenhouse",
       "ok": true,
-      "count": 44,
+      "count": 42,
       "search_term": "",
       "error": ""
     },
@@ -88,7 +88,7 @@
       "employer": "Point72",
       "ats": "greenhouse",
       "ok": true,
-      "count": 199,
+      "count": 202,
       "search_term": "",
       "error": ""
     },
@@ -106,7 +106,7 @@
       "employer": "Chime",
       "ats": "greenhouse",
       "ok": true,
-      "count": 75,
+      "count": 77,
       "search_term": "",
       "error": ""
     },
@@ -115,7 +115,7 @@
       "employer": "Coinbase",
       "ats": "greenhouse",
       "ok": true,
-      "count": 257,
+      "count": 256,
       "search_term": "",
       "error": ""
     },
@@ -124,7 +124,7 @@
       "employer": "Galaxy Digital",
       "ats": "greenhouse",
       "ok": true,
-      "count": 53,
+      "count": 54,
       "search_term": "",
       "error": ""
     },
@@ -169,7 +169,7 @@
       "employer": "DRW",
       "ats": "greenhouse",
       "ok": true,
-      "count": 156,
+      "count": 151,
       "search_term": "",
       "error": ""
     },
@@ -187,7 +187,7 @@
       "employer": "Jump Trading",
       "ats": "greenhouse",
       "ok": true,
-      "count": 88,
+      "count": 87,
       "search_term": "",
       "error": ""
     },
@@ -205,7 +205,7 @@
       "employer": "Plaid",
       "ats": "ashby",
       "ok": true,
-      "count": 142,
+      "count": 143,
       "search_term": "",
       "error": ""
     },
@@ -214,7 +214,7 @@
       "employer": "Wealthsimple",
       "ats": "ashby",
       "ok": true,
-      "count": 41,
+      "count": 40,
       "search_term": "",
       "error": ""
     },
