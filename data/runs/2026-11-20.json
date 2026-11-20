@@ -1,13 +1,13 @@
 {
   "date": "2026-11-20",
-  "run_time": "2026-11-20T02:36:56Z",
+  "run_time": "2026-11-20T20:30:56Z",
   "sources": [
     {
       "name": "jpmorgan-chase",
       "employer": "JPMorgan Chase",
       "ats": "oracle",
       "ok": true,
-      "count": 1342,
+      "count": 1355,
       "search_term": "wealth",
       "error": ""
     },
@@ -16,7 +16,7 @@
       "employer": "Robinhood",
       "ats": "greenhouse",
       "ok": true,
-      "count": 166,
+      "count": 165,
       "search_term": "",
       "error": ""
     },
@@ -34,7 +34,7 @@
       "employer": "SoFi",
       "ats": "greenhouse",
       "ok": true,
-      "count": 54,
+      "count": 51,
       "search_term": "",
       "error": ""
     },
@@ -43,7 +43,7 @@
       "employer": "Altruist",
       "ats": "greenhouse",
       "ok": true,
-      "count": 71,
+      "count": 68,
       "search_term": "",
       "error": ""
     },
@@ -52,7 +52,7 @@
       "employer": "Addepar",
       "ats": "greenhouse",
       "ok": true,
-      "count": 120,
+      "count": 121,
       "search_term": "",
       "error": ""
     },
@@ -61,7 +61,7 @@
       "employer": "Carta",
       "ats": "greenhouse",
       "ok": true,
-      "count": 78,
+      "count": 80,
       "search_term": "",
       "error": ""
     },
@@ -97,7 +97,7 @@
       "employer": "Affirm",
       "ats": "greenhouse",
       "ok": true,
-      "count": 225,
+      "count": 218,
       "search_term": "",
       "error": ""
     },
@@ -106,7 +106,7 @@
       "employer": "Chime",
       "ats": "greenhouse",
       "ok": true,
-      "count": 77,
+      "count": 80,
       "search_term": "",
       "error": ""
     },
@@ -115,7 +115,7 @@
       "employer": "Coinbase",
       "ats": "greenhouse",
       "ok": true,
-      "count": 253,
+      "count": 254,
       "search_term": "",
       "error": ""
     },
@@ -124,7 +124,7 @@
       "employer": "Galaxy Digital",
       "ats": "greenhouse",
       "ok": true,
-      "count": 56,
+      "count": 58,
       "search_term": "",
       "error": ""
     },
@@ -133,7 +133,7 @@
       "employer": "Upstart",
       "ats": "greenhouse",
       "ok": true,
-      "count": 78,
+      "count": 77,
       "search_term": "",
       "error": ""
     },
@@ -142,7 +142,7 @@
       "employer": "Mercury",
       "ats": "greenhouse",
       "ok": true,
-      "count": 72,
+      "count": 70,
       "search_term": "",
       "error": ""
     },
@@ -160,7 +160,7 @@
       "employer": "Jane Street",
       "ats": "greenhouse",
       "ok": true,
-      "count": 215,
+      "count": 216,
       "search_term": "",
       "error": ""
     },
@@ -169,7 +169,7 @@
       "employer": "DRW",
       "ats": "greenhouse",
       "ok": true,
-      "count": 153,
+      "count": 150,
       "search_term": "",
       "error": ""
     },
@@ -178,7 +178,7 @@
       "employer": "IMC Trading",
       "ats": "greenhouse",
       "ok": true,
-      "count": 152,
+      "count": 151,
       "search_term": "",
       "error": ""
     },
@@ -187,7 +187,7 @@
       "employer": "Jump Trading",
       "ats": "greenhouse",
       "ok": true,
-      "count": 86,
+      "count": 85,
       "search_term": "",
       "error": ""
     },
@@ -205,7 +205,7 @@
       "employer": "Plaid",
       "ats": "ashby",
       "ok": true,
-      "count": 146,
+      "count": 149,
       "search_term": "",
       "error": ""
     },
@@ -214,7 +214,7 @@
       "employer": "Wealthsimple",
       "ats": "ashby",
       "ok": true,
-      "count": 39,
+      "count": 38,
       "search_term": "",
       "error": ""
     },
