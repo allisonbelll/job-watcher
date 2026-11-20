@@ -1,19 +1,19 @@
 {
-  "run_time": "2026-11-19T20:48:10Z",
-  "run_date": "2026-11-19",
+  "run_time": "2026-11-20T02:36:56Z",
+  "run_date": "2026-11-20",
   "first_run_date": "2026-11-17",
-  "days_with_success": 3,
-  "open": 4170,
-  "open_in_role": 477,
-  "new_today": 74,
-  "removed_today": 80,
+  "days_with_success": 4,
+  "open": 4163,
+  "open_in_role": 476,
+  "new_today": 22,
+  "removed_today": 29,
   "sources": [
     {
       "name": "jpmorgan-chase",
       "employer": "JPMorgan Chase",
       "ats": "oracle",
       "ok": true,
-      "count": 1343,
+      "count": 1342,
       "search_term": "wealth",
       "error": ""
     },
@@ -22,7 +22,7 @@
       "employer": "Robinhood",
       "ats": "greenhouse",
       "ok": true,
-      "count": 167,
+      "count": 166,
       "search_term": "",
       "error": ""
     },
@@ -40,7 +40,7 @@
       "employer": "SoFi",
       "ats": "greenhouse",
       "ok": true,
-      "count": 53,
+      "count": 54,
       "search_term": "",
       "error": ""
     },
@@ -103,7 +103,7 @@
       "employer": "Affirm",
       "ats": "greenhouse",
       "ok": true,
-      "count": 227,
+      "count": 225,
       "search_term": "",
       "error": ""
     },
@@ -121,7 +121,7 @@
       "employer": "Coinbase",
       "ats": "greenhouse",
       "ok": true,
-      "count": 254,
+      "count": 253,
       "search_term": "",
       "error": ""
     },
@@ -130,7 +130,7 @@
       "employer": "Galaxy Digital",
       "ats": "greenhouse",
       "ok": true,
-      "count": 54,
+      "count": 56,
       "search_term": "",
       "error": ""
     },
@@ -148,7 +148,7 @@
       "employer": "Mercury",
       "ats": "greenhouse",
       "ok": true,
-      "count": 70,
+      "count": 72,
       "search_term": "",
       "error": ""
     },
@@ -157,7 +157,7 @@
       "employer": "Brex",
       "ats": "greenhouse",
       "ok": true,
-      "count": 261,
+      "count": 249,
       "search_term": "",
       "error": ""
     },
@@ -211,7 +211,7 @@
       "employer": "Plaid",
       "ats": "ashby",
       "ok": true,
-      "count": 141,
+      "count": 146,
       "search_term": "",
       "error": ""
     },
