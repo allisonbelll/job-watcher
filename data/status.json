@@ -1,19 +1,19 @@
 {
-  "run_time": "2026-11-21T02:50:29Z",
+  "run_time": "2026-11-21T19:27:49Z",
   "run_date": "2026-11-21",
   "first_run_date": "2026-11-17",
   "days_with_success": 5,
-  "open": 4169,
+  "open": 4165,
   "open_in_role": 478,
-  "new_today": 15,
-  "removed_today": 13,
+  "new_today": 17,
+  "removed_today": 19,
   "sources": [
     {
       "name": "jpmorgan-chase",
       "employer": "JPMorgan Chase",
       "ats": "oracle",
       "ok": true,
-      "count": 1355,
+      "count": 1353,
       "search_term": "wealth",
       "error": ""
     },
@@ -85,7 +85,7 @@
       "employer": "AQR Capital Management",
       "ats": "greenhouse",
       "ok": true,
-      "count": 40,
+      "count": 41,
       "search_term": "",
       "error": ""
     },
@@ -121,7 +121,7 @@
       "employer": "Coinbase",
       "ats": "greenhouse",
       "ok": true,
-      "count": 253,
+      "count": 252,
       "search_term": "",
       "error": ""
     },
@@ -130,7 +130,7 @@
       "employer": "Galaxy Digital",
       "ats": "greenhouse",
       "ok": true,
-      "count": 58,
+      "count": 57,
       "search_term": "",
       "error": ""
     },
@@ -139,7 +139,7 @@
       "employer": "Upstart",
       "ats": "greenhouse",
       "ok": true,
-      "count": 78,
+      "count": 77,
       "search_term": "",
       "error": ""
     },
