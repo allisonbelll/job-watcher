@@ -1,12 +1,12 @@
 {
-  "run_time": "2026-11-20T20:30:56Z",
-  "run_date": "2026-11-20",
+  "run_time": "2026-11-21T02:50:29Z",
+  "run_date": "2026-11-21",
   "first_run_date": "2026-11-17",
-  "days_with_success": 4,
-  "open": 4166,
+  "days_with_success": 5,
+  "open": 4169,
   "open_in_role": 478,
-  "new_today": 75,
-  "removed_today": 81,
+  "new_today": 15,
+  "removed_today": 13,
   "sources": [
     {
       "name": "jpmorgan-chase",
@@ -22,7 +22,7 @@
       "employer": "Robinhood",
       "ats": "greenhouse",
       "ok": true,
-      "count": 165,
+      "count": 163,
       "search_term": "",
       "error": ""
     },
@@ -40,7 +40,7 @@
       "employer": "SoFi",
       "ats": "greenhouse",
       "ok": true,
-      "count": 51,
+      "count": 53,
       "search_term": "",
       "error": ""
     },
@@ -58,7 +58,7 @@
       "employer": "Addepar",
       "ats": "greenhouse",
       "ok": true,
-      "count": 121,
+      "count": 120,
       "search_term": "",
       "error": ""
     },
@@ -103,7 +103,7 @@
       "employer": "Affirm",
       "ats": "greenhouse",
       "ok": true,
-      "count": 218,
+      "count": 222,
       "search_term": "",
       "error": ""
     },
@@ -121,7 +121,7 @@
       "employer": "Coinbase",
       "ats": "greenhouse",
       "ok": true,
-      "count": 254,
+      "count": 253,
       "search_term": "",
       "error": ""
     },
@@ -139,7 +139,7 @@
       "employer": "Upstart",
       "ats": "greenhouse",
       "ok": true,
-      "count": 77,
+      "count": 78,
       "search_term": "",
       "error": ""
     },
@@ -202,7 +202,7 @@
       "employer": "Ramp",
       "ats": "ashby",
       "ok": true,
-      "count": 185,
+      "count": 187,
       "search_term": "",
       "error": ""
     },
@@ -211,7 +211,7 @@
       "employer": "Plaid",
       "ats": "ashby",
       "ok": true,
-      "count": 149,
+      "count": 147,
       "search_term": "",
       "error": ""
     },
