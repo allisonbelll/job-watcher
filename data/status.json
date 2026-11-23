@@ -1,11 +1,11 @@
 {
-  "run_time": "2026-11-22T19:49:50Z",
-  "run_date": "2026-11-22",
+  "run_time": "2026-11-23T01:58:28Z",
+  "run_date": "2026-11-23",
   "first_run_date": "2026-11-17",
-  "days_with_success": 6,
-  "open": 4165,
+  "days_with_success": 7,
+  "open": 4166,
   "open_in_role": 478,
-  "new_today": 0,
+  "new_today": 1,
   "removed_today": 0,
   "sources": [
     {
@@ -94,7 +94,7 @@
       "employer": "Point72",
       "ats": "greenhouse",
       "ok": true,
-      "count": 202,
+      "count": 203,
       "search_term": "",
       "error": ""
     },
