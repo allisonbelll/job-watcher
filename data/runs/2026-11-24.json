@@ -1,13 +1,13 @@
 {
   "date": "2026-11-24",
-  "run_time": "2026-11-24T00:02:28Z",
+  "run_time": "2026-11-24T05:32:02Z",
   "sources": [
     {
       "name": "jpmorgan-chase",
       "employer": "JPMorgan Chase",
       "ats": "oracle",
       "ok": true,
-      "count": 1338,
+      "count": 1337,
       "search_term": "wealth",
       "error": ""
     },
@@ -16,7 +16,7 @@
       "employer": "Robinhood",
       "ats": "greenhouse",
       "ok": true,
-      "count": 160,
+      "count": 159,
       "search_term": "",
       "error": ""
     },
@@ -34,7 +34,7 @@
       "employer": "SoFi",
       "ats": "greenhouse",
       "ok": true,
-      "count": 55,
+      "count": 54,
       "search_term": "",
       "error": ""
     },
@@ -97,7 +97,7 @@
       "employer": "Affirm",
       "ats": "greenhouse",
       "ok": true,
-      "count": 218,
+      "count": 221,
       "search_term": "",
       "error": ""
     },
@@ -106,7 +106,7 @@
       "employer": "Chime",
       "ats": "greenhouse",
       "ok": true,
-      "count": 81,
+      "count": 80,
       "search_term": "",
       "error": ""
     },
@@ -151,7 +151,7 @@
       "employer": "Brex",
       "ats": "greenhouse",
       "ok": true,
-      "count": 260,
+      "count": 263,
       "search_term": "",
       "error": ""
     },
@@ -187,7 +187,7 @@
       "employer": "Jump Trading",
       "ats": "greenhouse",
       "ok": true,
-      "count": 86,
+      "count": 87,
       "search_term": "",
       "error": ""
     },
@@ -196,7 +196,7 @@
       "employer": "Ramp",
       "ats": "ashby",
       "ok": true,
-      "count": 181,
+      "count": 180,
       "search_term": "",
       "error": ""
     },
@@ -205,7 +205,7 @@
       "employer": "Plaid",
       "ats": "ashby",
       "ok": true,
-      "count": 145,
+      "count": 144,
       "search_term": "",
       "error": ""
     },
@@ -214,7 +214,7 @@
       "employer": "Wealthsimple",
       "ats": "ashby",
       "ok": true,
-      "count": 38,
+      "count": 37,
       "search_term": "",
       "error": ""
     },
