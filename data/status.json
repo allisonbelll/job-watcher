@@ -1,19 +1,19 @@
 {
-  "run_time": "2026-11-24T22:35:34Z",
-  "run_date": "2026-11-24",
+  "run_time": "2026-11-25T04:36:27Z",
+  "run_date": "2026-11-25",
   "first_run_date": "2026-11-17",
-  "days_with_success": 8,
-  "open": 4135,
+  "days_with_success": 9,
+  "open": 4129,
   "open_in_role": 476,
-  "new_today": 122,
-  "removed_today": 161,
+  "new_today": 16,
+  "removed_today": 22,
   "sources": [
     {
       "name": "jpmorgan-chase",
       "employer": "JPMorgan Chase",
       "ats": "oracle",
       "ok": true,
-      "count": 1336,
+      "count": 1338,
       "search_term": "wealth",
       "error": ""
     },
@@ -22,7 +22,7 @@
       "employer": "Robinhood",
       "ats": "greenhouse",
       "ok": true,
-      "count": 156,
+      "count": 162,
       "search_term": "",
       "error": ""
     },
@@ -49,7 +49,7 @@
       "employer": "Altruist",
       "ats": "greenhouse",
       "ok": true,
-      "count": 66,
+      "count": 61,
       "search_term": "",
       "error": ""
     },
@@ -94,7 +94,7 @@
       "employer": "Point72",
       "ats": "greenhouse",
       "ok": true,
-      "count": 202,
+      "count": 199,
       "search_term": "",
       "error": ""
     },
@@ -103,7 +103,7 @@
       "employer": "Affirm",
       "ats": "greenhouse",
       "ok": true,
-      "count": 216,
+      "count": 215,
       "search_term": "",
       "error": ""
     },
@@ -112,7 +112,7 @@
       "employer": "Chime",
       "ats": "greenhouse",
       "ok": true,
-      "count": 79,
+      "count": 78,
       "search_term": "",
       "error": ""
     },
@@ -121,7 +121,7 @@
       "employer": "Coinbase",
       "ats": "greenhouse",
       "ok": true,
-      "count": 250,
+      "count": 247,
       "search_term": "",
       "error": ""
     },
@@ -139,7 +139,7 @@
       "employer": "Upstart",
       "ats": "greenhouse",
       "ok": true,
-      "count": 76,
+      "count": 77,
       "search_term": "",
       "error": ""
     },
@@ -148,7 +148,7 @@
       "employer": "Mercury",
       "ats": "greenhouse",
       "ok": true,
-      "count": 71,
+      "count": 70,
       "search_term": "",
       "error": ""
     },
@@ -157,7 +157,7 @@
       "employer": "Brex",
       "ats": "greenhouse",
       "ok": true,
-      "count": 264,
+      "count": 261,
       "search_term": "",
       "error": ""
     },
@@ -202,7 +202,7 @@
       "employer": "Ramp",
       "ats": "ashby",
       "ok": true,
-      "count": 180,
+      "count": 182,
       "search_term": "",
       "error": ""
     },
