@@ -1,13 +1,13 @@
 {
   "date": "2026-11-26",
-  "run_time": "2026-11-26T03:47:04Z",
+  "run_time": "2026-11-26T21:43:06Z",
   "sources": [
     {
       "name": "jpmorgan-chase",
       "employer": "JPMorgan Chase",
       "ats": "oracle",
       "ok": true,
-      "count": 1334,
+      "count": 1335,
       "search_term": "wealth",
       "error": ""
     },
@@ -16,7 +16,7 @@
       "employer": "Robinhood",
       "ats": "greenhouse",
       "ok": true,
-      "count": 163,
+      "count": 162,
       "search_term": "",
       "error": ""
     },
@@ -34,7 +34,7 @@
       "employer": "SoFi",
       "ats": "greenhouse",
       "ok": true,
-      "count": 57,
+      "count": 58,
       "search_term": "",
       "error": ""
     },
@@ -52,7 +52,7 @@
       "employer": "Addepar",
       "ats": "greenhouse",
       "ok": true,
-      "count": 119,
+      "count": 120,
       "search_term": "",
       "error": ""
     },
@@ -97,7 +97,7 @@
       "employer": "Affirm",
       "ats": "greenhouse",
       "ok": true,
-      "count": 213,
+      "count": 216,
       "search_term": "",
       "error": ""
     },
@@ -115,7 +115,7 @@
       "employer": "Coinbase",
       "ats": "greenhouse",
       "ok": true,
-      "count": 257,
+      "count": 256,
       "search_term": "",
       "error": ""
     },
@@ -151,7 +151,7 @@
       "employer": "Brex",
       "ats": "greenhouse",
       "ok": true,
-      "count": 266,
+      "count": 270,
       "search_term": "",
       "error": ""
     },
@@ -178,7 +178,7 @@
       "employer": "IMC Trading",
       "ats": "greenhouse",
       "ok": true,
-      "count": 151,
+      "count": 149,
       "search_term": "",
       "error": ""
     },
@@ -187,7 +187,7 @@
       "employer": "Jump Trading",
       "ats": "greenhouse",
       "ok": true,
-      "count": 81,
+      "count": 83,
       "search_term": "",
       "error": ""
     },
