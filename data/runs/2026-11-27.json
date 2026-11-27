@@ -1,0 +1,240 @@
+{
+  "date": "2026-11-27",
+  "run_time": "2026-11-27T03:47:57Z",
+  "sources": [
+    {
+      "name": "jpmorgan-chase",
+      "employer": "JPMorgan Chase",
+      "ats": "oracle",
+      "ok": true,
+      "count": 1335,
+      "search_term": "wealth",
+      "error": ""
+    },
+    {
+      "name": "robinhood",
+      "employer": "Robinhood",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 161,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "betterment",
+      "employer": "Betterment",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 23,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "sofi",
+      "employer": "SoFi",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 58,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "altruist",
+      "employer": "Altruist",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 63,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "addepar",
+      "employer": "Addepar",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 120,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "carta",
+      "employer": "Carta",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 81,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "bridgewater",
+      "employer": "Bridgewater Associates",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 15,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "aqr",
+      "employer": "AQR Capital Management",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 44,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "point72",
+      "employer": "Point72",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 200,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "affirm",
+      "employer": "Affirm",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 216,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "chime",
+      "employer": "Chime",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 77,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "coinbase",
+      "employer": "Coinbase",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 256,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "galaxy-digital",
+      "employer": "Galaxy Digital",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 53,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "upstart",
+      "employer": "Upstart",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 74,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "mercury",
+      "employer": "Mercury",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 68,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "brex",
+      "employer": "Brex",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 266,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "jane-street",
+      "employer": "Jane Street",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 219,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "drw",
+      "employer": "DRW",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 149,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "imc",
+      "employer": "IMC Trading",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 150,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "jump-trading",
+      "employer": "Jump Trading",
+      "ats": "greenhouse",
+      "ok": true,
+      "count": 83,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "ramp",
+      "employer": "Ramp",
+      "ats": "ashby",
+      "ok": true,
+      "count": 183,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "plaid",
+      "employer": "Plaid",
+      "ats": "ashby",
+      "ok": true,
+      "count": 144,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "wealthsimple",
+      "employer": "Wealthsimple",
+      "ats": "ashby",
+      "ok": true,
+      "count": 36,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "kalshi",
+      "employer": "Kalshi",
+      "ats": "ashby",
+      "ok": true,
+      "count": 43,
+      "search_term": "",
+      "error": ""
+    },
+    {
+      "name": "wealthfront",
+      "employer": "Wealthfront",
+      "ats": "lever",
+      "ok": true,
+      "count": 19,
+      "search_term": "",
+      "error": ""
+    }
+  ]
+}
