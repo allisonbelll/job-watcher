@@ -1,13 +1,13 @@
 {
   "date": "2026-11-27",
-  "run_time": "2026-11-27T03:47:57Z",
+  "run_time": "2026-11-27T21:27:16Z",
   "sources": [
     {
       "name": "jpmorgan-chase",
       "employer": "JPMorgan Chase",
       "ats": "oracle",
       "ok": true,
-      "count": 1335,
+      "count": 1340,
       "search_term": "wealth",
       "error": ""
     },
@@ -25,7 +25,7 @@
       "employer": "Betterment",
       "ats": "greenhouse",
       "ok": true,
-      "count": 23,
+      "count": 22,
       "search_term": "",
       "error": ""
     },
@@ -34,7 +34,7 @@
       "employer": "SoFi",
       "ats": "greenhouse",
       "ok": true,
-      "count": 58,
+      "count": 57,
       "search_term": "",
       "error": ""
     },
@@ -43,7 +43,7 @@
       "employer": "Altruist",
       "ats": "greenhouse",
       "ok": true,
-      "count": 63,
+      "count": 62,
       "search_term": "",
       "error": ""
     },
@@ -52,7 +52,7 @@
       "employer": "Addepar",
       "ats": "greenhouse",
       "ok": true,
-      "count": 120,
+      "count": 119,
       "search_term": "",
       "error": ""
     },
@@ -61,7 +61,7 @@
       "employer": "Carta",
       "ats": "greenhouse",
       "ok": true,
-      "count": 81,
+      "count": 82,
       "search_term": "",
       "error": ""
     },
@@ -97,7 +97,7 @@
       "employer": "Affirm",
       "ats": "greenhouse",
       "ok": true,
-      "count": 216,
+      "count": 218,
       "search_term": "",
       "error": ""
     },
@@ -106,7 +106,7 @@
       "employer": "Chime",
       "ats": "greenhouse",
       "ok": true,
-      "count": 77,
+      "count": 76,
       "search_term": "",
       "error": ""
     },
@@ -142,7 +142,7 @@
       "employer": "Mercury",
       "ats": "greenhouse",
       "ok": true,
-      "count": 68,
+      "count": 67,
       "search_term": "",
       "error": ""
     },
@@ -169,7 +169,7 @@
       "employer": "DRW",
       "ats": "greenhouse",
       "ok": true,
-      "count": 149,
+      "count": 148,
       "search_term": "",
       "error": ""
     },
@@ -178,7 +178,7 @@
       "employer": "IMC Trading",
       "ats": "greenhouse",
       "ok": true,
-      "count": 150,
+      "count": 151,
       "search_term": "",
       "error": ""
     },
