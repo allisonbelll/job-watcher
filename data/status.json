@@ -1,12 +1,12 @@
 {
-  "run_time": "2026-11-27T21:27:16Z",
-  "run_date": "2026-11-27",
+  "run_time": "2026-11-28T03:31:52Z",
+  "run_date": "2026-11-28",
   "first_run_date": "2026-11-17",
-  "days_with_success": 11,
-  "open": 4138,
+  "days_with_success": 12,
+  "open": 4139,
   "open_in_role": 472,
-  "new_today": 20,
-  "removed_today": 26,
+  "new_today": 0,
+  "removed_today": 0,
   "sources": [
     {
       "name": "jpmorgan-chase",
@@ -22,7 +22,7 @@
       "employer": "Robinhood",
       "ats": "greenhouse",
       "ok": true,
-      "count": 161,
+      "count": 162,
       "search_term": "",
       "error": ""
     },
